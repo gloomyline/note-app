@@ -1,8 +1,112 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
-a {
-  color: #00B7FF;
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    background: url('../images/bg.jpg');
+    color: #666;
+}
+
+header {
+    height: 40px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
+    line-height: 40px;
+    border-bottom: 1px solid grey;
+}
+
+header a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #888;
+}
+
+header a:hover {
+    text-decoration: none;
+    cursor: pointer;
+    color: #f60;
+}
+
+.note-list {
+    border-left: 0;
+    border-right: 0;
+    /*position: absolute;*/
+    padding-bottom: 80px;
+    margin-top: 80px;
+    height: 100%;
+}
+
+.note-list .note-item {
+    border-bottom: 1px solid grey;
+    width: 96%;
+    margin-left: 2%;
+    height: 40px;
+    font-size: 16px;
+    line-height: 40px;
+}
+
+.note-list .note-item a {
+    text-decoration: none;
+    color: #888;
+}
+
+.note-list .note-item a:hover {
+    text-decoration: none;
+    color: #0034FF;
+}
+
+.note-list .note-item .note-item-right {
+    float: right;
+}
+
+.note-list .note-item .note-item-right img {
+    /*float: right;*/
+    width: 12px;
+}
+
+footer {
+    width: 100%;
+    border-top: 1px solid grey;
+    height: 40px;
+    line-height: 40px;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    z-index: 99;
+}
+
+.note-create-dir,
+.note-create-file {
+    color: rgba(231, 140, 22, 0.93);
+    margin-right: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.note-create-file {
+    text-decoration: none;
+}
+
+.note-create-dir img,
+.note-create-file img {
+    width: 24px;
+    height: 24px;
+}
+
+.file-content {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    line-height: 20px;
 }

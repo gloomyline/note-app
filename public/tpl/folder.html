@@ -1,0 +1,19 @@
+<header>
+    备忘录
+</header>
+<main>
+    <div class="note-list">
+        {{each model as item}}
+        <div class="note-item">
+            <a href="#folder/{{item.id}}">{{item.name}}</a>
+            <div class="note-item-right">
+                <span class="note-file-count">{{item.count}}</span>
+                <img src="/images/arrow.jpg" alt="">
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</main>
+<footer>
+    <a class="note-create-dir">新建文件夹</a>
+</footer>

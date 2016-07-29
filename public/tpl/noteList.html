@@ -1,0 +1,17 @@
+<a href="/">
+    <header>
+        备忘录
+    </header>
+</a>
+<main>
+    <div class="note-list">
+        {{each model}}
+        <div class="note-item">
+            <a href="#note/{{$value.folder}}/{{$value.id}}">{{$value.content}}</a>
+        </div>
+        {{/each}}
+    </div>
+</main>
+<footer>
+    <a class="note-create-file" href="#note/{{folderId}}"><img src="/images/new.jpg" alt="" /></a>
+</footer>
